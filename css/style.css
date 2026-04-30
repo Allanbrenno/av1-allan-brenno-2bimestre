@@ -1,37 +1,4 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
-header {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav {
-  background-color: #ffffff;
-  padding: 10px;
-  
-}
-nav a {
-  color: rgb(8, 7, 7);
-  text-decoration: none;
-  margin: 10px;
-}
-nav a:hover {
-  color: rgb(12, 0, 0);
-}
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  position: fixed;
-  bottom: 0;
-}
 
 
 .texto {
@@ -46,6 +13,62 @@ text-align: center;
   color: rgb(167, 51, 51);
 }
 
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
 
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #b12b2b;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+#sobre {
+  background-color: rgb(47, 53, 53);
+  border: 3px solid #f30101;
+  text-align: center;
+}
+
+.bg-color {
+  background-color: rgb(204, 80, 42);
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 5px double #b61a1a;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+footer {
+  background-color: #111010;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
 
 
