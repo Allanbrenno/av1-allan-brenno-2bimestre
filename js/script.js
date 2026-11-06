@@ -1,27 +1,20 @@
-const inputNome = document.querySelector("#nome");
-const inputIdade = document.querySelector("#idade");
-const formulario = document.querySelector("#formulario");
-const resultado = document.querySelector("#resultado");
 
-formulario.addEventListener("submit", function (event) {
+const cadastro = document.getElementById("cadastro");
+
+cadastro.addEventListener("submit", function(event) {
+
+    // Impede a página de recarregar
     event.preventDefault();
-    const nome = inputNome.value;
-    const idade = inputIdade.value;
 
-    resultado.classList.remove(
-"d-none",
-"alert-sucess",
-"alert-warning",
-"alert-danger",
+    // Pegando o nome e o email
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
 
-);
+    // Mostrando a mensagem
+    document.getElementById("mensagem").innerHTML =
+        "Cadastro realizado com sucesso, " + nome + "! Seja bem-vindo ao Mengão!";
 
-    if (idade < 18) {
-        resultado.textContent = `Olá, ${nome}, você é menor de idade.`;
-        resultado.classList.add("alert-danger");
-    } else {
-        resultado.textContent = `Olá, ${nome}, você é maior de idade.`;
-        resultado.classList.add("alert-success");
-    }
-    resultado.classList.remove("d-none");
+    // Limpando os campos
+    cadastro.reset();
+
 });
