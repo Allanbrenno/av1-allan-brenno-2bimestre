@@ -1,8 +1,6 @@
-
 const cadastro = document.getElementById("cadastro");
 
-cadastro.addEventListener("submit", function(event) {
-
+cadastro.addEventListener("submit", function (event) {
     // Impede a página de recarregar
     event.preventDefault();
 
@@ -12,9 +10,13 @@ cadastro.addEventListener("submit", function(event) {
 
     // Mostrando a mensagem
     document.getElementById("mensagem").innerHTML =
-        "Cadastro realizado com sucesso, " + nome + "! Seja bem-vindo ao Mengão!";
+        `Cadastro realizado com sucesso, ${nome}! Seja bem-vindo ao Mengão 🔴⚫`;
 
     // Limpando os campos
     cadastro.reset();
 
+    // Some depois de 5 segundos
+    setTimeout(function () {
+        document.getElementById("mensagem").innerHTML = "";
+    }, 5000);
 });
