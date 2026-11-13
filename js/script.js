@@ -8,15 +8,9 @@ cadastro.addEventListener("submit", function (event) {
     const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
 
-    // Mostrando a mensagem
-    document.getElementById("mensagem").innerHTML =
-        `Cadastro realizado com sucesso, ${nome}! Seja bem-vindo ao Mengão 🔴⚫`;
+   const cadastro = document.getElementById("cadastro");
 
-    // Limpando os campos
+    alert(`Cadastro realizado com sucesso, ${nome}! Seja bem-vindo ao Mengão 🔴⚫`);
+
     cadastro.reset();
-
-    // Some depois de 5 segundos
-    setTimeout(function () {
-        document.getElementById("mensagem").innerHTML = "";
-    }, 5000);
 });
